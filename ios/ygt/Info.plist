@@ -1,70 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>ko_KR</string>
-	<key>CFBundleDisplayName</key>
-	<string>영감탱</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>URI Scheme</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>ygtang</string>
-			</array>
-		</dict>
-	</array>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>localhost</key>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>ko_KR</string>
+		<key>CFBundleDisplayName</key>
+		<string>영감탱</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>$(PRODUCT_NAME)</string>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleShortVersionString</key>
+		<string>$(MARKETING_VERSION)</string>
+		<key>CFBundleSignature</key>
+		<string>????</string>
+		<key>CFBundleURLTypes</key>
+		<array>
 			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>URI Scheme</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>ygtang</string>
+				</array>
+			</dict>
+		</array>
+		<key>CFBundleVersion</key>
+		<string>1</string>
+		<key>LSRequiresIPhoneOS</key>
+		<true />
+		<key>NSAppTransportSecurity</key>
+		<dict>
+			<key>NSExceptionDomains</key>
+			<dict>
+				<key>localhost</key>
+				<dict>
+					<key>NSExceptionAllowsInsecureHTTPLoads</key>
+					<true />
+				</dict>
 			</dict>
 		</dict>
+		<key>NSCameraUsageDescription</key>
+		<string>영감탱은 영감을 아카이빙하는 앱으로 사용자의 이미지를 저장할 수 있습니다. 카메라로 촬영한 이미지로 영감을 생성할 수 있습니다. 따라서 직접 촬영한 이미지를 첨부하기 위해 $(PRODUCT_NAME) 앱이 카메라에 접근합니다.</string>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+		<string>영감탱은 영감을 아카이빙하는 앱으로 사용자의 이미지를 저장할 수 있습니다. 앨범의 이미지로 영감을 생성할 수 있습니다. 따라서 이미지를 첨부하기 위해 $(PRODUCT_NAME) 앱이 앨범에 접근합니다.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>영감탱은 영감을 아카이빙하는 앱으로 사용자의 이미지를 저장할 수 있습니다. 앨범의 이미지로 영감을 생성할 수 있습니다. 따라서 이미지를 첨부, 저장하기 위해 $(PRODUCT_NAME) 앱이 앨범에 접근합니다.</string>
+
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIRequiredDeviceCapabilities</key>
+		<array>
+			<string>armv7</string>
+		</array>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>UIViewControllerBasedStatusBarAppearance</key>
+		<false />
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>blob</string>
+		</array>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>영감탱은 영감을 아카이빙하는 앱으로 사용자의 이미지를 저장할 수 있습니다. 카메라로 촬영한 이미지로 영감을 생성할 수 있습니다. 따라서 직접 촬영한 이미지를 첨부하기 위해 $(PRODUCT_NAME) 앱이 카메라에 접근합니다.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>영감탱은 영감을 아카이빙하는 앱으로 사용자의 이미지를 저장할 수 있습니다. 앨범의 이미지로 영감을 생성할 수 있습니다. 따라서 이미지를 첨부하기 위해 $(PRODUCT_NAME) 앱이 앨범에 접근합니다.</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
-</dict>
 </plist>
